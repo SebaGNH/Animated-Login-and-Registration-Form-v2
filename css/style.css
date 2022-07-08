@@ -107,5 +107,11 @@ section .container .user .form-box .signup a {
   text-decoration: none;
   color: #577eff;
 }
+section .container .signup-box {
+  display: none;
+}
+section .container .signup-box .form-box input[type=submit] {
+  background-color: #e73e49;
+}
 
 /*# sourceMappingURL=style.css.map */
