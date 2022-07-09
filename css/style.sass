@@ -103,7 +103,11 @@ section
         .signin-box
             //display: none
         .signup-box
-            display: none
+            //display: none
+            pointer-events: none
+            .img-box
+                top: -100% //La imagen se va para arriba
             .form-box
+                top: 100% //De esta manera vemos los 2 formularios
                 input[type="submit"]
                     background-color: #e73e49

@@ -108,7 +108,13 @@ section .container .user .form-box .signup a {
   color: #577eff;
 }
 section .container .signup-box {
-  display: none;
+  pointer-events: none;
+}
+section .container .signup-box .img-box {
+  top: -100%;
+}
+section .container .signup-box .form-box {
+  top: 100%;
 }
 section .container .signup-box .form-box input[type=submit] {
   background-color: #e73e49;
