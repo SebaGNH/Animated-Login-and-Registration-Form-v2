@@ -25,6 +25,8 @@ section
     .container
         position: relative
         width: 800px
+        //max-width: 800px
+        //width: 100%
         height: 500px
         background-color: #fff
         box-shadow: 0 15px 50px rgba(#000,.1)
@@ -136,3 +138,13 @@ section
                 top: 0
 .active
     background-color: #557085 //Cambiamos el color del fondo
+
+@media screen and ( max-width: 991px )
+    .container
+        max-width: 400px
+        .user
+            .img-box
+                //display: none
+            .form-box
+                display: none
+                //width: 80%

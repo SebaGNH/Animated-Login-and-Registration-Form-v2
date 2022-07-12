@@ -149,4 +149,13 @@ section .active .signup-box .form-box {
   background-color: #557085;
 }
 
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 400px;
+  }
+  .container .user .form-box {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
