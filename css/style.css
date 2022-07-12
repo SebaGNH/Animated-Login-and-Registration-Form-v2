@@ -145,4 +145,8 @@ section .active .signup-box .form-box {
   top: 0;
 }
 
+.active {
+  background-color: #557085;
+}
+
 /*# sourceMappingURL=style.css.map */
