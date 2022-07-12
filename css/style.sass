@@ -28,6 +28,7 @@ section
         height: 500px
         background-color: #fff
         box-shadow: 0 15px 50px rgba(#000,.1)
+        overflow: hidden //Lo agrego alfinal
         .user
             position: absolute
             top: 0
@@ -100,14 +101,36 @@ section
                         font-weight: 600
                         text-decoration: none
                         color: #577eff
+                        cursor: pointer //Luego borrarlo
+    
         .signin-box
             //display: none
+            //pointer-events: none
+            .img-box
+                top: 0
+            .form-box
+                top: 0
         .signup-box
             //display: none
-            pointer-events: none
+            top: 0
+            pointer-events: none //Quitamos los eventos del click
             .img-box
                 top: -100% //La imagen se va para arriba
+                
             .form-box
                 top: 100% //De esta manera vemos los 2 formularios
                 input[type="submit"]
                     background-color: #e73e49
+    .active
+        .signin-box
+            .img-box
+                top: -100%                
+            .form-box
+                top: 100%
+                transition: .5s
+        .signup-box
+            pointer-events: all
+            .img-box
+                top: 0
+            .form-box
+                top: 0

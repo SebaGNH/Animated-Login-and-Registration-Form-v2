@@ -26,6 +26,7 @@ section .container {
   height: 500px;
   background-color: #fff;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 section .container .user {
   position: absolute;
@@ -106,8 +107,16 @@ section .container .user .form-box .signup a {
   font-weight: 600;
   text-decoration: none;
   color: #577eff;
+  cursor: pointer;
+}
+section .container .signin-box .img-box {
+  top: 0;
+}
+section .container .signin-box .form-box {
+  top: 0;
 }
 section .container .signup-box {
+  top: 0;
   pointer-events: none;
 }
 section .container .signup-box .img-box {
@@ -118,6 +127,22 @@ section .container .signup-box .form-box {
 }
 section .container .signup-box .form-box input[type=submit] {
   background-color: #e73e49;
+}
+section .active .signin-box .img-box {
+  top: -100%;
+}
+section .active .signin-box .form-box {
+  top: 100%;
+  transition: 0.5s;
+}
+section .active .signup-box {
+  pointer-events: all;
+}
+section .active .signup-box .img-box {
+  top: 0;
+}
+section .active .signup-box .form-box {
+  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
