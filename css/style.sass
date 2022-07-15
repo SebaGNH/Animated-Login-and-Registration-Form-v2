@@ -11,26 +11,21 @@ body
     display: flex
     justify-content: center
     align-items: center
-    min-height: 100vh
+    //min-height: 50vh
     font-family: 'Poppins', sans-serif
 
 section
     position: relative
-    //display: flex
-    //justify-content: center
-    //align-items: center
-    //min-height: 100vh
     padding: 20%
     transition: .5s
     .container
         position: relative
         width: 800px
-        //max-width: 800px
-        //width: 100%
         height: 500px
         background-color: #fff
         box-shadow: 0 15px 50px rgba(#000,.1)
         overflow: hidden //Lo agrego alfinal
+        border-radius: 3px
         .user
             position: absolute
             top: 0
@@ -43,7 +38,6 @@ section
                 width: 50%
                 height: 100%
                 transition: .5s
-                //display: flex
                 img
                     position: absolute
                     top: 0
@@ -106,8 +100,6 @@ section
                         cursor: pointer //Luego borrarlo
 
         .signin-box
-            //display: none
-            //pointer-events: none
             .img-box
                 top: 0
             .form-box
@@ -140,11 +132,11 @@ section
     background-color: #557085 //Cambiamos el color del fondo
 
 @media screen and ( max-width: 991px )
-    .container
-        max-width: 400px
-        .user
-            .img-box
-                //display: none
-            .form-box
-                display: none
-                //width: 80%
+    section
+        .container
+            width: 400px
+            .user
+                .img-box
+                    display: none
+                .form-box
+                    width: 100%

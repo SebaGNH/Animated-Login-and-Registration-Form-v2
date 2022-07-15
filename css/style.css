@@ -11,7 +11,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -27,6 +26,7 @@ section .container {
   background-color: #fff;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius: 3px;
 }
 section .container .user {
   position: absolute;
@@ -150,11 +150,14 @@ section .active .signup-box .form-box {
 }
 
 @media screen and (max-width: 991px) {
-  .container {
-    max-width: 400px;
+  section .container {
+    width: 400px;
   }
-  .container .user .form-box {
+  section .container .user .img-box {
     display: none;
+  }
+  section .container .user .form-box {
+    width: 100%;
   }
 }
 
